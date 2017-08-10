@@ -1,0 +1,44 @@
+{% extends "legaladmin/base.html" %}
+{% load static %}
+
+{% block addHead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/appmenu.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/roadmap.css' %}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="{% static 'js/roadmap.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<!-- page content -->
+<div style="float:left; margin-left: 66px; width: 740px">
+    <h1>Guide</h1>
+    <p>
+        {% static 'img/swot_main.png' %}
+        This view allows the user to explore a table of ESIF data:<br>
+        <center><img src="{% static 'img/iframe.png' %}"> <br></center>
+        The data can be filtered and sorted using these buttons:<br>
+        <center><img src="{% static 'img/iframe_data_filter.png' %}"> <br></center>
+        Clicking the menu button presents more options for the user:<br>
+        <center><img src="{% static 'img/iframe_menu_button.png' %}"> <br></center>
+        The ‘More Views’ button takes the user to create charts and maps of the data:<br>
+        <center><img src="{% static 'img/iframe_menu_more_view.png' %}"> <br></center>
+        The ‘Download’ button allows the user to download the data for offline use:<br>
+        <center><img src="{% static 'img/iframe_menu_download.png' %}"> <br></center>
+        The ‘Go To Data Exploration Tool’ button will take the user to the main page:<br>
+        <center><img src="{% static 'img/iframe_go_to_button.png' %}"> <br></center>
+        By following the EU Law Links, the user can explore EU regulations and laws on other websites:<br>
+        <center><img src="{% static 'img/eu_law_links.png' %}"> <br></center>
+    </p>
+</div>
+<!-- page content -->
+
+<!-- Page Menus -->
+<div style="float: left; margin-left: 66px; margin-bottom: 66px;">
+    {% include "legaladmin/online_steps.html" %}
+</div>
+<!-- Page Menus -->
+{% endblock %}

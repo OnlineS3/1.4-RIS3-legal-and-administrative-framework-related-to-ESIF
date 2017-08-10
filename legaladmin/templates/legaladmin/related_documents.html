@@ -1,0 +1,32 @@
+{% extends "legaladmin/base.html" %}
+{% load static %}
+
+{% block addHead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/appmenu.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/roadmap.css' %}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="{% static 'js/roadmap.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<!-- page content -->
+<div style="float:left; margin-left: 66px; width: 740px">
+    <h1>Related Documents</h1>
+    <ul>
+        <li><a href="http://ec.europa.eu/regional_policy/en/policy/what/glossary/e/esif">Regional Policy Term Glossary</a> - Definition of ESIF and ERDF</li>
+        <li><a href="https://www.gov.uk/european-structural-investment-funds">Application for Funds (England)</a> - gov.uk website to apply for European Structural and Investment Funds</li>
+        <li><a href="http://ec.europa.eu/regional_policy/en/faq/about_open_data/">ESI Funds Open Data Platform Frequently Asked Questions</a> -  Frequently Asked Question about the ESI Funds Open Data Tool used for this application</li>
+    </ul>
+</div>
+<!-- page content -->
+
+<!-- Page Menus -->
+<div style="float: left; margin-left: 66px; margin-bottom: 66px;">
+    {% include "legaladmin/online_steps.html" %}
+</div>
+<!-- Page Menus -->
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "legaladmin/base.html" %}
+{% load static %}
+
+{% block addHead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/appmenu.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/roadmap.css' %}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="{% static 'js/roadmap.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<!-- Page Content -->
+<div style="float:left; margin-left: 66px; margin-top: 61px; width:748px;">
+    <div style="float:left;">
+        <h1>ESIF 2014-2020 Finance Implementation Details Dataset</h1>
+        <iframe width="748px" title="ESIF 2014-2020 Finance Implementation Details" height="500px" src="https://cohesiondata.ec.europa.eu/w/99js-gm52/n544-wyhf?cur=wC_80DQL_e8&from=root" frameborder="0"scrolling="no">
+            <a href="https://cohesiondata.ec.europa.eu/dataset/ESIF-2014-2020-Finance-Implementation-Details/99js-gm52" title="ESIF 2014-2020 Finance Implementation Details" target="_blank">
+                ESIF 2014-2020 Finance Implementation Details
+            </a>
+        </iframe>
+        <p>
+            <a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a>
+            <button style="float:right;" id="to-website" onclick="window.open('https://cohesiondata.ec.europa.eu/')"> Go To Data Exploration Tool   <img src="{% static 'img/access-icon.png' %}" width="20"></button>
+        </p>
+
+    </div>
+    <div style="clear:left; float:left; border: 1px solid #ddd; width:748px; margin-bottom:66px; margin-top: 30px;">
+        <div style="margin-bottom:15px; margin-left: 15px; margin-right: 15px; margin-top: 15px;">
+            <h1>EU Law Links</h1>
+            <ul>
+                <li><a href="http://eur-lex.europa.eu/eli-register/about.html">EUR-Lex</a></li>
+                <li><a href="https://webgate.ec.europa.eu/esiflegislation">RegioWiki</a> (requires creation of an account)</li>
+                <li><a href="http://ec.europa.eu/regional_policy/en/information/legislation/regulations/">European Structural and Investment Funds 2014-2020: official texts and commentaries</a></li>
+                <li><a href="http://global.practicallaw.com/country/eu-law">Practical Law: EU Law</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Page Content -->
+
+<!-- Page Menus -->
+<div style="float: left; margin-left: 66px; margin-top: 61px; margin-right: 60;">
+    {% include "legaladmin/online_steps.html" %}
+</div>
+<!-- Page Menus -->
+{% endblock %}</html>

@@ -15,6 +15,9 @@ def guide(request):
 def about(request):
 	return render(request, 'legaladmin/about.html')
 
+def access(request):
+	return render(request, 'legaladmin/access_app.html')
+
 def related(request):
 	return render(request, 'legaladmin/related_documents.html')
 

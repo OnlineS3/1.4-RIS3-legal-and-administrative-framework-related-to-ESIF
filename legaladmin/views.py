@@ -12,8 +12,6 @@ def index(request):
 def guide(request):
 	return render(request, 'legaladmin/guide.html')
 
-def about(request):
-	return render(request, 'legaladmin/about.html')
 
 def access(request):
 	return render(request, 'legaladmin/access_app.html')

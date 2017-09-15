@@ -4,9 +4,11 @@
 {% block addHead %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/appmenu.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/roadmap.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <script type="text/javascript" src="{% static 'js/roadmap.js' %}"></script>
 {% endblock %}
@@ -14,6 +16,7 @@
 {% block content %}
 <!-- Page Content -->
 <div style="float:left; margin-left: 66px; margin-top: 61px; width:748px;">
+    <!--
     <div style="float:left;">
         <h1>ESIF 2014-2020 Finance Implementation Details Dataset</h1>
         <iframe width="748px" title="ESIF 2014-2020 Finance Implementation Details" height="500px" src="https://cohesiondata.ec.europa.eu/w/99js-gm52/n544-wyhf?cur=wC_80DQL_e8&from=root" frameborder="0"scrolling="no">
@@ -37,6 +40,100 @@
                 <li><a href="http://global.practicallaw.com/country/eu-law">Practical Law: EU Law</a></li>
             </ul>
         </div>
+    </div> -->
+
+    <div>
+        <ul id="visionsession_list"style="list-style: none; padding-left:0px;">
+            <li style="border-bottom: 1px solid #0099CC;overflow:auto;background:#0099CC;color:white;margin-top:5px; margin-bottom:5px;">
+                <div style="clear:right;">
+                    <div id="text_div" style="float:left;">
+                        <div id="name_div">
+                            <b>ESIF Legislation</b>
+                        </div>
+                    </div>
+                    <div id="button_div" style="float:right;">
+                        <button class="back_button cvb_button" data-toggle="collapse" data-target="#demo" onclick="expand(this);"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div id="demo" class="collapse" style="float:left;background:white;color:black;border-left: 1px solid #0099CC;border-right: 1px solid #0099CC;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </li>
+
+            <li style="border-bottom: 1px solid #0099CC;overflow:auto;background:#0099CC;color:white;margin-top:5px; margin-bottom:5px;">
+                <div style="clear:right;">
+                    <div id="text_div" style="float:left;">
+                        <div id="name_div">
+                            <b>EFSI Regulation</b>
+                        </div>
+                    </div>
+                    <div id="button_div" style="float:right;">
+                        <button class="back_button cvb_button" data-toggle="collapse" data-target="#demo2" onclick="expand(this);"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div id="demo2" class="collapse" style="float:left;background:white;color:black;border-left: 1px solid #0099CC;border-right: 1px solid #0099CC;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </li>
+
+            <li style="border-bottom: 1px solid #0099CC;overflow:auto;background:#0099CC;color:white;margin-top:5px; margin-bottom:5px;">
+                <div style="clear:right;">
+                    <div id="text_div" style="float:left;">
+                        <div id="name_div">
+                            <b>State Aid Legislation</b>
+                        </div>
+                    </div>
+                    <div id="button_div" style="float:right;">
+                        <button class="back_button cvb_button" data-toggle="collapse" data-target="#demo3" onclick="expand(this);"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div id="demo3" class="collapse" style="float:left;background:white;color:black;border-left: 1px solid #0099CC;border-right: 1px solid #0099CC;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </li>
+
+            <li style="border-bottom: 1px solid #0099CC;overflow:auto;background:#0099CC;color:white;margin-top:5px; margin-bottom:5px;">
+                <div style="clear:right;">
+                    <div id="text_div" style="float:left;">
+                        <div id="name_div">
+                            <b>EU Selecting and Funding Process</b>
+                        </div>
+                    </div>
+                    <div id="button_div" style="float:right;">
+                        <button class="back_button cvb_button" data-toggle="collapse" data-target="#demo3" onclick="expand(this);"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div id="demo3" class="collapse" style="float:left;background:white;color:black;border-left: 1px solid #0099CC;border-right: 1px solid #0099CC;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </li>
+
+            <li style="border-bottom: 1px solid #0099CC;overflow:auto;background:#0099CC;color:white;margin-top:5px; margin-bottom:5px;">
+                <div style="clear:right;">
+                    <div id="text_div" style="float:left;">
+                        <div id="name_div">
+                            <b>ERDF Regulations</b>
+                        </div>
+                    </div>
+                    <div id="button_div" style="float:right;">
+                        <button class="back_button cvb_button" data-toggle="collapse" data-target="#demo3" onclick="expand(this);"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div id="demo3" class="collapse" style="float:left;background:white;color:black;border-left: 1px solid #0099CC;border-right: 1px solid #0099CC;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 <!-- Page Content -->

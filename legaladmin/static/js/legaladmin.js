@@ -24,3 +24,15 @@ $(document).ready(function() {
       });
     });
 });
+
+function expand(button)
+{
+	if(button.innerHTML == '<i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>')
+	{
+		button.innerHTML = '<i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>';
+	}
+	else
+	{
+		button.innerHTML = '<i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>';
+	}
+}
